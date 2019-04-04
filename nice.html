@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coca Cola Nice</title>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: rgb(255,0,25);
+            background: linear-gradient(308deg, rgba(255,0,25,1) 0%, rgba(131,0,96,1) 65%, rgba(0,18,112,1) 100%);
+            
+        }
+        container{
+            margin-top: 30vh;
+            display:flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            color: whitesmoke;
+        }
+        h1{
+            font-size: 70px;
+        }
+        h2{
+            font-size: 50px;
+        }
+        .tracking-in-expand {
+            -webkit-animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+            animation: tracking-in-expand 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+        }
+        .slide-in-elliptic-top-fwd {
+            -webkit-animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: slide-in-elliptic-top-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+        @-webkit-keyframes slide-in-elliptic-top-fwd {
+            0% {
+                -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+                transform: translateY(-600px) rotateX(-30deg) scale(0);
+                -webkit-transform-origin: 50% 100%;
+                transform-origin: 50% 100%;
+                opacity: 0;
+            }
+            100% {
+                -webkit-transform: translateY(0) rotateX(0) scale(1);
+                transform: translateY(0) rotateX(0) scale(1);
+                -webkit-transform-origin: 50% 1400px;
+                transform-origin: 50% 1400px;
+                opacity: 1;
+            }
+        }
+        @keyframes slide-in-elliptic-top-fwd {
+            0% {
+                -webkit-transform: translateY(-600px) rotateX(-30deg) scale(0);
+                transform: translateY(-600px) rotateX(-30deg) scale(0);
+                -webkit-transform-origin: 50% 100%;
+                transform-origin: 50% 100%;
+                opacity: 0;
+            }
+            100% {
+                -webkit-transform: translateY(0) rotateX(0) scale(1);
+                transform: translateY(0) rotateX(0) scale(1);
+                -webkit-transform-origin: 50% 1400px;
+                transform-origin: 50% 1400px;
+                opacity: 1;
+            }
+
+        }
+        @-webkit-keyframes tracking-in-expand {
+            0% {
+                letter-spacing: -0.5em;
+                opacity: 0;
+            }
+            40% {
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes tracking-in-expand {
+            0% {
+                letter-spacing: -0.5em;
+                opacity: 0;
+            }
+            40% {
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+<container>
+    <h1 class="slide-in-elliptic-top-fwd">Coca-Cola <br> <em>Nice</em></h1>
+    <h2 class="tracking-in-expand">Life is just <em>Nicer</em> with Coca-Cola</h2>
+</container>
+</body>
+</html>

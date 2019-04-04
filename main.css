@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(255,0,25);
+    background: linear-gradient(128deg, rgba(255,0,25,1) 0%, rgba(131,0,96,1) 65%, rgba(0,18,112,1) 100%);
+}
+
+#logo {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+    color: whitesmoke;
+    font-family: 'Dancing Script', cursive;
+}
+
+img {
+    width: 500px;
+    height: 400px;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}
